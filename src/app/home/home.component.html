@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <table class="table-bordered">
+    <thead>
+        <button class="btn btn-danger me-md-2" routerLink="/addplayer">
+            add
+          </button>
+      <tr>
+        <th scope="col">name</th>
+        <th scope="col">equipe</th>
+        <th scope="col">etat</th>
+        <th scope="col">action</th>
+      </tr>
+    </thead>
+    
+    <tbody  [ngClass]="{'green-row': player.etat, 'red-row': !player.etat}" *ngFor="let player of listPlayers">
+        <!-- [style.background-color]="player.etat ? 'green':'red'" -->
+      <tr >
+        <th scope="row">{{ player.name }}</th>
+        <td>{{ player.equipe }}</td>
+        <td>{{ player.etat }}</td>
+        <td>
+            <button class="btn btn-primary" (click)="change(player)">{{ player.etat ? 'Désaffecter' : 'Affecter' }}</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="submit" (click)="Calcul()">Calcul</button>
+  {{nb}}
+  {{nbf}}
+</div>

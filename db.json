@@ -1,0 +1,45 @@
+{
+  "Player": [
+    {
+      "id": 1,
+      "name": "cr7",
+      "equipe": "real",
+      "etat": true
+    },
+    {
+      "id": 2,
+      "name": "messi",
+      "equipe": "barca",
+      "etat": false
+    },
+    {
+      "etat": true,
+      "name": "hhh",
+      "equipe": "kkkkgg",
+      "id": 7
+    },
+    {
+      "etat": false,
+      "equipe": "kkkk",
+      "name": "balssemfg",
+      "id": 8
+    },
+    {
+      "name": "hhh",
+      "equipe": "kkkkgg",
+      "id": 9
+    },
+    {
+      "name": "lllllll",
+      "equipe": "kkkk",
+      "etat": false,
+      "id": 10
+    },
+    {
+      "etat": true,
+      "equipe": "kkkkgg",
+      "name": "n",
+      "id": 11
+    }
+  ]
+}
